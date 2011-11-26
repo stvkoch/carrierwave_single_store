@@ -29,6 +29,14 @@ Example
 
 	See examples folder.
 
+Dependences
+===========
+    https://github.com/jnicklas/carrierwave
+
+Install
+=======
+    rails plugin install git@github.com:stvkoch/carrierwave_single_store.git
+    
 
 Any question, please send me message for Steven Koch <stvkoch@gmail.com>
 
