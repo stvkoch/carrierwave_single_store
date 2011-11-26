@@ -3,7 +3,6 @@ CarrierwaveSingleStore
 
 This plugin helps carrierwave saving images/docs with same content on one place, even if you have different names.
 
-It was developed for models that can save files the same but with different records.
 
 Imagine:
 item = Item.find(3)
