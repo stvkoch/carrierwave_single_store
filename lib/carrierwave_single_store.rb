@@ -11,15 +11,11 @@ module CarrierWave
             raise CarrierWave::Uploader::Exceptions::NotRemoveFile, 'Not remove'  
           end
         end
-        
-        def single_store_verion
-          "0.1.2"
-        end
 
         def store_dir
           "uploads/#{single_store_dir}"
         end
-        
+
         def filename
           if super
             @name ||= "#{md5}#{File.extname(super)}"

@@ -3,20 +3,20 @@ class ImageUploader < CarrierWave::Uploader::SingleStore::Base
   # Include RMagick or ImageScience support:
   include CarrierWave::RMagick
   
-  #CarrierWave::Uploader::SingleStore::Base overide this methods ---{{{
+  #CarrierWave::Uploader::SingleStore::Base add and overide methods on CarrierWave plugin---{{{
   
   # storage :file
   
   # -->this is very important: Verify if exist some record on table, if exist, not remove file!
-  # before :remove, :verify_exist
+  # before :remove, :check_if_not_exist
 
-  # def verify_exist
+  # def check_if_not_exist
   #   if( !model.send("#{mounted_as}_identifier").nil? && model.class.where("#{mounted_as}=?", model.send("#{mounted_as}_identifier") ).count>0 )
   #     model.send("remove_#{mounted_as}=", false)
   #   end
   # end
 
-  # --> you can overide this method, add you store path, but important part are single_store_dir that return single store location
+  # --> you can overide this method in you uploader file, add your store path, but important part are single_store_dir that return single store location for your file and record
   # def store_dir
   #   "uploads/#{single_store_dir}"
   # end
