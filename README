@@ -20,6 +20,7 @@ otherItem.update_attributes(:image=>'web_image_but_same_content.jpg')
 otherItem.image #1234567_hex.jpg
 otherItem.image_url #uploads/item/image/12/34/56/1234567_hex.jpg
 
+#these two records have different data, but with identical content files. CarrierWave::SingleStore holds one file for both records, saving disk space
 
 
 
