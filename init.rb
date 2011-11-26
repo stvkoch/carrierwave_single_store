@@ -1,0 +1,3 @@
+require 'exceptions/carrierwaves_uploader_exceptions'
+require 'carrierwaves_uploader_callbacks'
+require 'carrierwave_single_store'
