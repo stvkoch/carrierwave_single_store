@@ -5,7 +5,8 @@ module CarrierWave
 			end
 			class NotRemoveFile < CarrierWave::Uploader::Exceptions::Base
 			end
-			
+			class NotProcessing < CarrierWave::Uploader::Exceptions::Base
+			end
 		end #Exceptions
 	end
 end
