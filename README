@@ -14,7 +14,7 @@ item.image_url #uploads/item/image/12/34/56/1234567_hex.jpg
 otherItem = Item.find(5)
 otherItem.id #5
 otherItem.name #other table
-otherItem.update_attributes(:image=>'web_image_but_same_content.jpg')
+otherItem.updae_tattributes(:image=>'web_image_but_same_content.jpg')
 otherItem.image #1234567_hex.jpg
 otherItem.image_url #uploads/item/image/12/34/56/1234567_hex.jpg
 
@@ -37,6 +37,6 @@ Install
     rails plugin install git@github.com:stvkoch/carrierwave_single_store.git
     
 
-Any question, please send me message for Steven Koch <stvkoch@gmail.com>
+Any question, send message Steven Koch <stvkoch@gmail.com>
 
 Copyright (c) 2011 Steven Koch <stvkoch@gmail.com>, released under the MIT license
