@@ -1,9 +1,7 @@
 CarrierwaveSingleStore
 ======================
 
-This plugin helps carrierwave(https://github.com/jnicklas/carrierwave) saving images/docs with same content on one place, even if you have different names.
-
-It was developed for the models that can save the same(same content) files but in different records, saving disk space.
+This plugin helps carrierwave(https://github.com/jnicklas/carrierwave) saving images/docs with same content on one place, even if you have different names. It was developed for the models that can save the same(same content) files but in different records, saving disk space.
 
 
 Imagine:
@@ -20,7 +18,7 @@ otherItem.update_attributes(:image=>'web_image_but_same_content.jpg')
 otherItem.image #1234567_hex.jpg
 otherItem.image_url #uploads/item/image/12/34/56/1234567_hex.jpg
 
-#these two records have different data, but with identical content files. CarrierWave::SingleStore holds one file for both records, saving disk space
+#these two records have different data, but with identical content files. CarrierWave::SingleStore holds one file for both records, saving space disk
 
 
 
@@ -29,9 +27,10 @@ Example
 
 	See examples folder.
 
-Dependences
+Dependencies
 ===========
     https://github.com/jnicklas/carrierwave
+
 
 Install
 =======
