@@ -12,10 +12,6 @@ module CarrierWave
           end
         end
 
-        def store_dir
-          "uploads/#{single_store_dir}"
-        end
-
         def filename
           if super
             @name ||= "#{md5}#{File.extname(super)}"
