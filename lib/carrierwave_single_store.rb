@@ -33,7 +33,7 @@ module CarrierWave
         #@example: product/image/A3/45/97/A34597....jpg
         def single_store_dir
           data_column = model.send("#{mounted_as}_identifier")
-          "#{model.class.to_s.underscore}/#{mounted_as}/#{data_column[0..1]}/#{data_column[2..3]}/#{data_column[4..5]}"
+          "#{mounted_as}/#{data_column[0..1]}/#{data_column[2..3]}/#{data_column[4..5]}"
         end
 
       end
